@@ -52,8 +52,8 @@ android {
 dependencies {
 
 
-
     implementation(libs.androidx.core.ktx)
+    implementation(libs.navigation.compose)
     implementation(libs.coil)
     implementation(libs.androidx.lifecycle.compose)
     implementation(libs.retrofit)

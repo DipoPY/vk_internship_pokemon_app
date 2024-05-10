@@ -3,5 +3,4 @@
     <string name="loading_failed">Failed to load</string>
     <string name="retry">Retry</string>
     <string name="loading">Loading</string>
-    <string name="content_description">Pokemon</string>
 </resources>

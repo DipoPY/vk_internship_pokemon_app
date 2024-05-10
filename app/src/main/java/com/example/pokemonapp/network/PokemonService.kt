@@ -1,7 +1,6 @@
 package com.example.pokemonapp.network
 
 
-
 import com.example.infoPokemon.PokemonDetales
 import com.example.pokemons.Pokemons
 import retrofit2.http.GET
@@ -14,11 +13,10 @@ interface PokemonService {
         @Query("offset") offsetQuery: Int,
         @Query("limit") limitQuery: Int,
 
-    ): Pokemons
+        ): Pokemons
 
     @GET
     suspend fun getPokemonDetail(@Url pokemonUrl: String): PokemonDetales
-
 
 
 }
