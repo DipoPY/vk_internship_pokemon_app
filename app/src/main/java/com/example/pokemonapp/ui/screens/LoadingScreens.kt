@@ -13,11 +13,14 @@ import androidx.compose.ui.unit.dp
 import com.example.pokemonapp.R
 
 @Composable
-fun LoadingScreen(modifier: Modifier = Modifier){
-    Box(modifier = Modifier.fillMaxSize(),){
+fun LoadingScreen(modifier: Modifier = Modifier) {
+    Box(modifier = Modifier.fillMaxSize()) {
         Image(
-            modifier = Modifier.size(200.dp).align(Alignment.Center),
+            modifier = Modifier
+                .size(200.dp)
+                .align(Alignment.Center),
             painter = painterResource(id = R.drawable.pokemon_ball),
-            contentDescription = stringResource(id = R.string.loading))
+            contentDescription = stringResource(id = R.string.loading)
+        )
     }
 }

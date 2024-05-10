@@ -12,14 +12,14 @@ import androidx.compose.ui.res.stringResource
 import com.example.pokemonapp.R
 
 @Composable
-fun  ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier){
+fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(text = stringResource(id = R.string.loading_failed))
-        Button(onClick = retryAction){
+        Button(onClick = retryAction) {
             Text(text = stringResource(id = R.string.retry))
         }
     }
