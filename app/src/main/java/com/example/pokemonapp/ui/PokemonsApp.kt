@@ -17,7 +17,6 @@ import androidx.navigation.compose.rememberNavController
 import com.example.pokemonapp.ui.screens.HomeScreen
 import com.example.pokemonapp.ui.screens.PokemonDetailScreen
 
-@OptIn(ExperimentalMaterial3Api::class)
 @RequiresExtension(extension = Build.VERSION_CODES.S, version = 7)
 @Composable
 fun PokemonsApp(modifier: Modifier = Modifier) {

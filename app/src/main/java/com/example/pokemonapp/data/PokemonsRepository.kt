@@ -46,8 +46,6 @@ class NetworkPokemonsRepository(private val pokemonService: PokemonService) : Po
                 }
             }
 
-            val newPokemons = if (deferreds.isNotEmpty()) deferreds.awaitAll() else emptyList()
-
             results.mapNotNull { pokemonCache[it.url] }
         }
 }

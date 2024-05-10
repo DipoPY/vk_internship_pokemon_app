@@ -35,7 +35,7 @@ fun ProgressBar(currentPoints: Int, maxPoints: Int = 100, target: String) {
                 shape = RoundedCornerShape(12.dp)
             )
     ) {
-        val result: String = "$currentPoints / $maxPoints"
+        val result = "$currentPoints / $maxPoints"
 
         Box(
             modifier = Modifier
